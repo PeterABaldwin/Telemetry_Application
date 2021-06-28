@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "393339366543",
+    "firebase_url": "https://cosc457groupproject-ce693.firebaseio.com",
+    "project_id": "cosc457groupproject-ce693",
+    "storage_bucket": "cosc457groupproject-ce693.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393339366543:android:7268ff4627b7a5c66214fa",
+        "android_client_info": {
+          "package_name": "com.group_project_1_x"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393339366543-mt0pbvobphhd5rqr06pktqvvinb4v11i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZCx1m_zmrcQCVbXD5z0jTpMoRY-CflqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393339366543-mt0pbvobphhd5rqr06pktqvvinb4v11i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

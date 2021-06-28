@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connectivity"
+        android:textColor="@android:color/black"
+        android:textSize="34sp"
+        android:paddingVertical="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="5dp"
+        >
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Bluetooth Status:"
+            android:textSize="26sp"
+            />
+        <TextView
+            android:id="@+id/text_bluetooth_status"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="CONNECTED"
+            android:textSize="26sp"
+            android:textColor="#008000"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="5dp"
+        >
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Wifi Status:"
+            android:textSize="26sp"
+            />
+        <TextView
+            android:id="@+id/text_wifi_status"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="CONNECTED"
+            android:textSize="26sp"
+            android:textColor="#008000"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="5dp"
+        >
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="IP Address:"
+            android:textSize="26sp"
+            />
+        <EditText
+            android:id="@+id/edit_text_ip"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="127.0.0.1"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"
+            />
+        <Button
+            android:id="@+id/update_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="5dp"
+        >
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Refresh Rate:"
+            android:textSize="26sp"
+            />
+
+        <Spinner
+            android:id="@+id/refresh_rate_spinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/refresh_rate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

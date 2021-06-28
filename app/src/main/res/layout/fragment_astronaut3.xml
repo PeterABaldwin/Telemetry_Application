@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:gauge="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+        <!-- Pressure View -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pressure"
+                android:textColor="@android:color/black"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                />
+            <!-- First row of pressure data -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- One item in this row -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    >
+                    <de.nitri.gauge.Gauge
+                        android:id="@+id/oxygen_pressure"
+                        android:layout_width="242dp"
+                        android:layout_height="242dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        gauge:initialValue="800"
+                        gauge:maxValue="950"
+                        gauge:minValue="750"
+                        gauge:totalNicks="120"
+                        gauge:valuePerNick="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Oxygen Pressure (psia)"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp"
+                        />
+
+                </LinearLayout>
+
+                <!-- One item in this row -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    >
+                    <de.nitri.gauge.Gauge
+                        android:id="@+id/h2o_gas_pressure"
+                        android:layout_width="242dp"
+                        android:layout_height="242dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        gauge:initialValue="15"
+                        gauge:maxValue="20"
+                        gauge:minValue="10"
+                        gauge:totalNicks="20"
+                        gauge:valuePerNick="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="H2O Gas Pressure (psia)"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp"
+                        />
+                </LinearLayout>
+
+                <!-- One item in this row -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    >
+                    <de.nitri.gauge.Gauge
+                        android:id="@+id/h2o_liquid_pressure"
+                        android:layout_width="242dp"
+                        android:layout_height="242dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        gauge:initialValue="15"
+                        gauge:maxValue="20"
+                        gauge:minValue="10"
+                        gauge:totalNicks="20"
+                        gauge:valuePerNick="1"  />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="H2O Liquid Pressure (psia)"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- First row of pressure data -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <!-- One item in this row -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    >
+                    <de.nitri.gauge.Gauge
+                        android:id="@+id/sop_pressure"
+                        android:layout_width="242dp"
+                        android:layout_height="242dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        gauge:initialValue="800"
+                        gauge:maxValue="950"
+                        gauge:minValue="750"
+                        gauge:totalNicks="120"
+                        gauge:valuePerNick="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SOP Pressure (psia)"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    >
+                    <de.nitri.gauge.Gauge
+                        android:id="@+id/sub_pressure"
+                        android:layout_width="242dp"
+                        android:layout_height="242dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        gauge:initialValue="3"
+                        gauge:maxValue="5"
+                        gauge:minValue="1"
+                        gauge:totalNicks="20"
+                        gauge:valuePerNick="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SUB Pressure (psia)"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    >
+                    <de.nitri.gauge.Gauge
+                        android:id="@+id/internal_suit_pressure"
+                        android:layout_width="242dp"
+                        android:layout_height="242dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        gauge:initialValue="3"
+                        gauge:maxValue="5"
+                        gauge:minValue="1"
+                        gauge:totalNicks="20"
+                        gauge:valuePerNick="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Internal Suit Pressure (psia)"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- One item in this row -->
+
+
+                <!-- One item in this row -->
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Time Life View -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Life"
+                android:textColor="@android:color/black"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                />
+            <!-- First row of time life data -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+                <!-- One item in this row -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    >
+                    <TextView
+                        android:id="@+id/oxygen_time_life"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50:00"
+                        android:textStyle="bold"
+                        android:textSize="57sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oxygen(min)"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp"
+                        />
+
+                </LinearLayout>
+
+                <!-- One item in this row -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    >
+                    <TextView
+                        android:id="@+id/water_time_life"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50:00"
+                        android:textStyle="bold"
+                        android:textSize="57sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Water(min)"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp"
+                        />
+
+                </LinearLayout>
+                <!-- One item in this row -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    >
+                    <TextView
+                        android:id="@+id/battery_life"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50:00"
+                        android:textStyle="bold"
+                        android:textSize="57sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Battery(min)"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Pressure View -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oxygen and SOP rate"
+                android:textColor="@android:color/black"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                />
+            <!-- First row of pressure data -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- One item in this row -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    >
+                    <de.nitri.gauge.Gauge
+                        android:id="@+id/oxygen_rate"
+                        android:layout_width="242dp"
+                        android:layout_height="242dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        gauge:initialValue="800"
+                        gauge:maxValue="950"
+                        gauge:minValue="750"
+                        gauge:totalNicks="120"
+                        gauge:valuePerNick="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oxygen Rate (psi/min)"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp"
+                        />
+
+                </LinearLayout>
+
+                <!-- One item in this row -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    >
+                    <de.nitri.gauge.Gauge
+                        android:id="@+id/sop_rate"
+                        android:layout_width="242dp"
+                        android:layout_height="242dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        gauge:initialValue="15"
+                        gauge:maxValue="20"
+                        gauge:minValue="10"
+                        gauge:totalNicks="20"
+                        gauge:valuePerNick="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SOP Rate (psi/min)"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- One data point per cell -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

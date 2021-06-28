@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ARGOS Mission Control</string>
+
+    <string name="title_activity_menu">Menu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="backButton">Back</string>
+
+    <string name="sendHint">Send data here.</string>
+    <string name="sendButton">Send</string>
+
+    <string name="astronaut1">Astronaut 1</string>
+    <string name="astronaut2">Astronaut 2</string>
+    <string name="astronaut3">Astronaut 3</string>
+    <string name="astronaut4">Astronaut 4</string>
+    <string name="trainingButton">Training Manuals</string>
+
+    <string name="title_activity_training_manual_selection">TrainingManualSelection</string>
+    <string name="title_activity_messages">Messages</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+</resources>

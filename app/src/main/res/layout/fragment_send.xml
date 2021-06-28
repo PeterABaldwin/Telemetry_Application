@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Send">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/message_Linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    >
+                        <!-- List view to display sent and received messages -->
+                        <ListView
+                            android:id="@+id/messages_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@android:color/transparent"
+                            >
+
+                        </ListView>
+                </LinearLayout>
+                <android.support.v4.widget.Space
+                    android:id="@+id/test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/sendEditText"
+                            android:layout_width="683dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_border"
+                            android:hint="@string/sendHint"
+                            android:textSize="18sp"/>
+                        <Button
+                            android:id="@+id/sendButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sendButton" />
+                </LinearLayout>
+        </RelativeLayout>
+
+</LinearLayout>

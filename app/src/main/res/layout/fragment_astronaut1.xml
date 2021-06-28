@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Astronaut1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/as10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        style="@style/Glance"/>
+    <TextView
+        android:id="@+id/as11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/as10"
+        android:text=""
+        android:textAlignment="center"
+        style="@style/Glance"/>
+
+    <TextView
+        android:id="@+id/as12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/as10"
+        android:layout_toRightOf="@id/as11"
+        android:text=""
+        android:textAlignment="center"
+        style="@style/Glance"/>
+
+    <TextView
+        android:id="@+id/as13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/as12"
+        android:text=""
+        android:textAlignment="center"
+        style="@style/Glance"/>
+
+    <TextView
+        android:id="@+id/as14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/as13"
+        android:layout_below="@id/as12"
+        android:text=""
+        android:textAlignment="center"
+        style="@style/Glance"/>
+
+    <TextView
+        android:id="@+id/as15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/as13"
+        android:text=""
+        android:textAlignment="center"
+        style="@style/Glance"/>
+    </LinearLayout>
+</FrameLayout>
